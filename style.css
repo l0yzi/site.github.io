@@ -55,6 +55,12 @@ body{
     line-height: normal;
 }
 
+.translate_img{
+    width: 75px;
+    margin-top: -15px;
+    margin-right: 10px;
+}
+
 .underline-one {
     color: #000;
     font-family: 'Montserrat';
@@ -475,4 +481,20 @@ body{
         height: 50px;
         top: 740px;
     }
+    .translate_img{
+        display: none;
+    }
+}
+
+
+
+
+/* RU/ENG */
+
+.hide{
+    display: none;
+}
+
+.visible{
+    display: block;
 }
