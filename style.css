@@ -1,8 +1,6 @@
 @font-face {
     font-family: 'Montserrat';
     src: url('fonts/Montserrat-Regular.ttf') format('truetype'); 
-
-   
 }
 body{
     width: 100%;
@@ -12,6 +10,8 @@ body{
     margin-left: -5px;
 }
 
+
+/* fixed nav */
 .fixed_nav{
     display: flex;
     width: 100%;
@@ -92,24 +92,7 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* stage 1 */
 
 .stage_one{
     background: linear-gradient(173deg, #DDC2A6 41.52%, #DFAA6E 91.25%);
@@ -144,7 +127,7 @@ body{
 
 
 
-
+/* stage 2 */
 .stage_two{
     width: 100%;
     height: 1213px;
@@ -184,32 +167,7 @@ body{
 }
 
 
-.blur_rec_one{
-    width: 100%;
-    height: 150px;
-    flex-shrink: 0;
-    position: absolute;
-    top: 900px;
-    background: rgba(217, 217, 217, 0.01);
-    backdrop-filter: blur(70px);
-    z-index: 1;
-}
-
-.blur_rec_two{
-    width: 100%;
-    height: 150px;
-    flex-shrink: 0;
-    position: absolute;
-    top: 2100px;
-    background: rgba(217, 217, 217, 0.01);
-    backdrop-filter: blur(70px);
-    z-index: 1;
-}
-
-
-
-
-
+/* stage 3 */
 .stage_three{
     display: flex;
     flex-direction: column;
@@ -221,7 +179,7 @@ body{
     background: radial-gradient(115.14% 62.61% at 52.18% -6.46%, #DFAA6E 0%, #DDC2A6 100%);
 }
 
-.txt_stage_three{
+.stage_three_txt{
     color: #383330;
     font-family: 'Montserrat';
     font-size: 88px;
@@ -278,7 +236,7 @@ body{
     margin-top: -20px;
 }
 
-
+/* stage 4 */
 .stage_four{
     display: flex;
     justify-content: center;
@@ -329,6 +287,11 @@ body{
     box-shadow: 3px 6px 0px 0px #000;
 }
 
+.stage_four_img{
+    width: 125px;
+    height: 125px;
+    flex-shrink: 0;
+}
 
 
 .rec:hover {
@@ -336,7 +299,7 @@ body{
 }
 
 
-
+/* blur and metka */
 .metka{
     position: absolute;
     width: 100px;
@@ -344,4 +307,171 @@ body{
     top: 1090px;
     background: rgba(217, 217, 217, 0.01);
     
+}
+
+.blur_rec_one{
+    width: 100%;
+    height: 150px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 900px;
+    background: rgba(217, 217, 217, 0.01);
+    backdrop-filter: blur(70px);
+    z-index: 1;
+}
+
+.blur_rec_two{
+    width: 100%;
+    height: 150px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 2100px;
+    background: rgba(217, 217, 217, 0.01);
+    backdrop-filter: blur(70px);
+    z-index: 1;
+}
+
+.visible_nav{
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 360px) {
+    body{
+        height: 1700px;
+    }
+    .fixed_nav{
+        display: none;
+    }
+
+    .visible_nav{
+        display: block;
+        color: #201F20;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 54px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    /* stage 1 */
+    .stage_one{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 500px;
+    }
+
+    .stage_one img{
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+        margin-bottom: 100px;
+    }
+
+    .stage_one p{
+        font-size: 17px;
+        margin-left: 20px;
+        
+    }
+
+    /* stage 2 */
+    .stage_two{
+        height: 400px;
+        flex-direction: column-reverse;
+        margin-top: -100px;
+    }
+    .stage_two_txt h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .stage_two_txt li{
+        font-size: 12px;
+    }
+    .stage_two_txt{
+        margin-top: 0px;
+    }
+    .stage_two img{
+        width: 225px;
+        margin-left: 20px;
+        margin-top: -0px;
+    }
+
+
+    /* stage 3 */
+    .stage_three{
+        display: flex;
+        height: 950px;
+    }
+    
+    .stage_three_txt{
+        font-size: 20px;
+        margin-top: 0px;
+    }
+    .top_rec{
+        display: block;
+        
+    }
+    
+    .rec{
+        width: 250px;
+        height: 100px;
+        margin-bottom: 30px;
+    }
+    
+    .line{
+        display: none;
+    }
+    
+    .vert_line{
+        display: none;
+    }
+    
+    .txt_rec{
+        font-size: 15px;
+    }
+    
+    .rec p{
+        font-size: 11px;
+        margin-top: 0px;
+    }
+    /* stage 4 */
+    
+    .stage_four{
+        margin-top: 0px;
+    }
+    
+    .stage_four h1{
+        font-size: 20px;
+    }
+    .group_circle{
+        flex-direction: column;
+    }
+    
+    .circle{
+        width: 80px;
+        height: 80px;
+        flex-shrink: 0;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    .stage_four_img{
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+    }
+    
+
+    /* blur */
+    .blur_rec_one{
+        height: 50px;
+        top: 360px;
+    }
+    .blur_rec_two{
+        height: 50px;
+        top: 740px;
+    }
 }
