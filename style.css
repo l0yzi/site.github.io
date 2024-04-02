@@ -4,7 +4,7 @@
 }
 body{
     width: 100%;
-    height: 3857px;
+    height: 3557px;
     padding: 0px;
     margin-top: -16px;
     margin-left: -5px;
@@ -142,7 +142,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -100px;
+    margin-top: -200px;
 }
 
 .stage_two h1{
@@ -180,7 +180,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 1800px;
+    height: 1700px;
     flex-shrink: 0;
     background: radial-gradient(115.14% 62.61% at 52.18% -6.46%, #DFAA6E 0%, #DDC2A6 100%);
 }
@@ -192,7 +192,7 @@ body{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: -260px;
+    margin-top: -100px;
 }
 .top_rec{
     display: flex;
@@ -311,7 +311,7 @@ body{
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 1090px;
+    top: 1000px;
     background: rgba(217, 217, 217, 0.01);
     
 }
@@ -321,7 +321,7 @@ body{
     height: 150px;
     flex-shrink: 0;
     position: absolute;
-    top: 900px;
+    top: 850px;
     background: rgba(217, 217, 217, 0.01);
     backdrop-filter: blur(70px);
     z-index: 1;
@@ -332,7 +332,7 @@ body{
     height: 150px;
     flex-shrink: 0;
     position: absolute;
-    top: 2100px;
+    top: 2000px;
     background: rgba(217, 217, 217, 0.01);
     backdrop-filter: blur(70px);
     z-index: 1;
@@ -346,7 +346,7 @@ body{
 
 @media screen and (max-width: 400px) {
     body{
-        height: 1700px;
+        height: 2150px;
     }
     .fixed_nav{
         display: none;
@@ -360,6 +360,7 @@ body{
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        /* margin-top: -250px; */
     }
     /* stage 1 */
     .stage_one{
@@ -368,53 +369,54 @@ body{
         align-items: center;
         flex-direction: column;
         width: 100%;
-        height: 500px;
+        height: 700px;
+
     }
 
     .stage_one img{
-        width: 100px;
-        height: 100px;
+        width: 175px;
+        height: 175px;
         margin-right: 10px;
         margin-bottom: 100px;
     }
 
     .stage_one p{
-        font-size: 17px;
+        font-size: 25px;
         margin-left: 20px;
-        
+        margin-top: 100px;
     }
 
     /* stage 2 */
     .stage_two{
-        height: 400px;
+        height: 600px;
         flex-direction: column-reverse;
-        margin-top: -100px;
+        margin-top: 0px;
     }
     .stage_two_txt h1{
-        font-size: 20px;
+        font-size: 54px;
         text-align: center;
     }
     .stage_two_txt li{
-        font-size: 12px;
+        font-size: 20px;
     }
     .stage_two_txt{
-        margin-top: 0px;
+        margin-top: -140px;
     }
     .stage_two img{
-        width: 225px;
+        width: 295px;
         margin-left: 20px;
-        margin-top: -0px;
+        margin-top: 20px;
     }
 
 
     /* stage 3 */
     .stage_three{
         display: flex;
-        height: 950px;
+        height: 900px;
     }
     
     .stage_three_txt{
-        font-size: 20px;
+        font-size: 45px;
         margin-top: 0px;
     }
     .top_rec{
@@ -423,7 +425,7 @@ body{
     }
     
     .rec{
-        width: 250px;
+        width: 265px;
         height: 100px;
         margin-bottom: 30px;
     }
@@ -437,12 +439,12 @@ body{
     }
     
     .txt_rec{
-        font-size: 15px;
+        font-size: 14px;
     }
     
     .rec p{
-        font-size: 11px;
-        margin-top: 0px;
+        font-size: 12px;
+        margin-top: -5px;
     }
     /* stage 4 */
     
@@ -451,23 +453,20 @@ body{
     }
     
     .stage_four h1{
-        font-size: 20px;
-    }
-    .group_circle{
-        flex-direction: column;
+        font-size: 54px;
     }
     
     .circle{
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
         flex-shrink: 0;
         margin-left: 20px;
         margin-bottom: 20px;
     }
 
     .stage_four_img{
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         flex-shrink: 0;
     }
     
@@ -476,12 +475,17 @@ body{
     .blur_rec_one{
         height: 50px;
         top: 360px;
+        display: none;
     }
     .blur_rec_two{
         height: 50px;
-        top: 740px;
+        top: 1250px;
     }
     .translate_img{
+        display: none;
+    }
+
+    .metka{
         display: none;
     }
 }
